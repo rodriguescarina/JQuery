@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        alert($("#p1").text());
+    });
+    $("#btn2").click(function(){
+        alert($("#p1").html());
+    });
+
+    $("#btn3").click(function(){
+        alert($("#form").val());
+    });
+
+    $("#btn4").click(function(){
+        alert($("#w3s").attr("href"));
+    });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">Este eh um <b>exemplo</b> de manipulacao DOM com <i>jQuery</i>.</p>
+
+<p>Nome: <input type="text" id="form"></p>
+
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+
+<button id="btn1">Mostrar Texto</button>
+<button id="btn2">Mostrar HTML</button>
+<button id="btn3">Mostrar Value</button>
+<button id="btn4">Mostrar valor Attr</button>
+
+</body>
+</html>

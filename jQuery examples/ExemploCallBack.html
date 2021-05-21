@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+//Função sem Callback
+    $("#semCallBack").click(function(){
+        $("#p1").hide(1000);
+        alert("Paragrafo escondido");
+    });
+  
+    
+
+
+// Função com CallBack
+    $("#comCallBack").click(function(){
+        $("#p2").hide("slow", function(){
+            alert("Paragrafo escondido");
+        });
+    });
+
+});
+</script>
+</head>
+<body>
+
+
+<h2> Exemplo Sem utilizar CallBack </h2>
+<button id="semCallBack">Esconder</button>
+
+<p id="p1"> Sistemas de Informacao.</p>
+
+
+<h2> Exemplo Com CallBack </h2>
+<button id="comCallBack">Esconder</button>
+
+<p id="p2"> Programacao para Web II.</p>
+
+</body>
+</html>

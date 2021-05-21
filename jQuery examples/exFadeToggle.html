@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
+    });
+});
+</script>
+
+
+<style>
+
+#div1{
+    width:80px;
+    height:80px;
+    background-color:red;
+}
+
+#div2{
+    width:80px;
+    height:80px;
+    background-color:green;
+}
+
+#div3{
+    width:80px;
+    height:80px;
+    background-color:blue;
+}
+
+</style>
+</head>
+<body>
+
+<p>Exemplo de Fade com jQuery.</p>
+
+<button>Click</button><br><br>
+
+<div id="div1"></div>
+<br>
+<div id="div2"></div>
+<br>
+<div id="div3"></div>
+
+</body>
+</html>

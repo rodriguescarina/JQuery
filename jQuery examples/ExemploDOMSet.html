@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#p1").text("Hello world!");
+    });
+    $("#btn2").click(function(){
+        $("#p2").html("<b>Hello world!</b>");
+    });
+    $("#btn3").click(function(){
+        $("#inp").val("Fumo Corinthians!!!");
+    });
+
+     $("#btn4").click(function(){
+        $("#w3s").attr("href", "https://www.w3schools.com/jquery");
+    });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">Primeiro Paragrafo.</p>
+<p id="p2">Segundo Paragrafo.</p>
+
+<p>Input: <input type="text" id="inp" value="Vai Palmeiras!!!"></p>
+
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+<button id="btn1">Set Text</button>
+<button id="btn2">Set HTML</button>
+<button id="btn3">Set Value</button>
+<button id="btn4">Mudar Valor href</button>
+
+</body>
+</html>
